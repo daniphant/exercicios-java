@@ -21,12 +21,37 @@ public class Exercicio02 {
             }
         }
 
-        // Usando a função toString da util Arrays para converter nossos vetores em strings, imprimimos para o usuário o resultado.
-        System.out.println("Valores acima ou iguais ao do corte: ");
-        System.out.println(Arrays.toString(v2));
-        
-        System.out.println("Valores abaixo do corte: ");
-        System.out.println(Arrays.toString(v3));
+        // Mostrando os vetores.
+        System.out.println("Total de valores acima ou igual ao valor de corte: " + j);
+
+
+        // Usando switches para ter certeza que a mensagem mostrada na tela será coerente com a quantidade de valores. Não quero mostrar "Eles são" se só tenho 1 valor por exemplo.
+        switch (j) {
+            case 0:
+                break;
+            case 1:
+                System.out.println("Esse valor é: " + v2[0]);
+                break;
+            default:
+                System.out.print("Eles são:");
+                for (int i = 0; i < j; i++) 
+                    System.out.printf(" %.3f ", v2[i]);
+                break;
+        }
+        System.out.println("\nTotal de valores abaixo do valor de corte: " + k);
+        switch (k) {
+            case 0:
+                break;
+            case 1:
+                System.out.println("Esse valor é: " + v3[0]);
+                break;
+            default:
+                System.out.print("Eles são:");
+                for (int i = 0; i < k; i++) 
+                    System.out.printf(" %.3f ", v3[i]);
+                break;
+        }
+        System.out.println(); // Adicionando um \n para deixar o final da execução em uma linha separada da listagem de valores.
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
