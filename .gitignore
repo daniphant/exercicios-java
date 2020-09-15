@@ -1,2 +1,4 @@
 #Extensão gerada pelo javac não necessária
 *.class
+*.zip
+*.pdf
