@@ -1,2 +1,2 @@
 # exercicios-java
-Container de todos os exercícios de Java que eu fiz na aula de POO em 2020.
+Some Java problems we went through earlier on in my 2020 object oriented programming class.
